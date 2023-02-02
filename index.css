@@ -1,4 +1,4 @@
-* {
+            * {
     box-sizing: border-box;
 }
 
@@ -7,23 +7,15 @@ body {
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     background: #bde0fe;
+    overflow: hidden;
+    min-width: 500px;
 }
 
 #taskApp {
-    width: 50%;
-    height: auto;
+    width: 85%;
+    padding:10px;
     margin: auto;
     display: block;
-}
-
-@media only screen and (max-width:500px) {
-  body {
-  }
-  #taskApp {
-    height: auto;;
-    width: 100%;
-    padding: 10px;
-  }
 }
 
 a {
@@ -31,7 +23,6 @@ a {
 }
 
 #input-el {
-    width: 100%;
     padding: 10px;
     box-sizing: border-box;
     border: 1px solid #003049;
@@ -39,6 +30,7 @@ a {
     outline: none;
     background: transparent;
     color: #003049;
+    width: 100%;
 }
 
 #input-el::placeholder {
@@ -119,8 +111,9 @@ button {
 }
 
 #ul-el {
+    width: 100%;
     margin-top: 20px;
-    padding-left: 3%;
+    padding-left: 2%;
 }
 
 #ul-el li {
@@ -137,5 +130,20 @@ button {
     cursor:pointer;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 2%;
+}
+@media only screen and (max-width:500px) {
+    body {
+        min-width:100%;
+    }
+    #taskApp {
+        margin: auto;
+        display: block;
+    }
+    .tooltip {
+      display: ;
+    }
+    #ul-el {
+        padding-left: 7%;
+    }
 }

@@ -42,6 +42,9 @@ function renderLeads() {
 if (checkChromeInstallation) {
     document.querySelector(".tooltiptext").textContent = "You cannot delete items one-by-one on extension because of Content Security Policy";
     document.querySelector(".tooltiptext").style.fontSize = "10px";
+    document.getElementsByTagName('body')[0].style.minWidth = "500px";
+    ulEl.style.paddingLeft = "4%";
+
 }
 
 deleteBtn.addEventListener("click", function() {
