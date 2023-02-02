@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 500px;
+    background: #bde0fe;
+}
+
+#taskApp {
+    width: 400px;
+    height: auto;
+    min-height: 100px;
+    margin: auto;
+    display: block;
+    min-width: 400px;
+}
+
+a {
+  color: inherit;
+}
+
+#input-el {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #003049;
+    margin-bottom: 4px;
+    outline: none;
+    background: transparent;
+    color: #003049;
+}
+
+#input-el::placeholder {
+    color: rgba(0,0,0,0.5);
+}
+
+button {
+    padding: 10px 20px;
+    font-weight: bold;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+#save-btn {
+    border-color: #003049;
+    background: transparent;
+    color: #003049;
+}
+
+#save-btn:hover {
+    background: #003049;
+    color: white;
+}
+
+#delete-btn {
+    background: transparent;
+    color: red;
+    border-color: red;
+}
+
+#delete-btn:hover {
+    background: red;
+    color: white;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  background: transparent;
+  border-color: #003049;
+}
+
+.tooltip:hover {
+    background: #003049;
+    color: white;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #003049;;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px;
+  position: absolute;
+  z-index: 1;
+  top: 110%;
+  left: 50%;
+  margin-left: -60px;
+  word-wrap: break-word;
+  font-size: 14px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 45%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#ul-el {
+    margin-top: 20px;
+    padding-left: 3%;
+}
+
+#ul-el li {
+    margin-top: 10px;
+    color: #003049;
+    position: relative;
+    word-wrap: break-word;
+    padding-right: 20px;
+}
+
+#delete {
+    color:red;
+    margin-left:10px;
+    cursor:pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

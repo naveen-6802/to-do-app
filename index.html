@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do App</title>
+        <link rel="icon" href="icon.ico" type="image/gif" sizes="32x32" />
+        <link rel="icon" href="icon.ico" type="image/gif" sizes="64x64" />
+        <link rel="icon" href="icon.ico" type="image/gif" sizes="128x128" />
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="taskApp">
+            <h3>To Do App by naveen6802</h3>
+            <input type="text" id="input-el" placeholder="Enter task & click enter or SAVE TASK button to save tasks">
+            <button id="save-btn">SAVE TASK</button>
+            <button id="delete-btn">DELETE ALL</button>
+            <button class="tooltip">?
+                <span class="tooltiptext">This app can be your chrome extension: download the source code files from here - https://github.com/naveen-6802/to-do-app, unzip folder & files, then go to chrome://extensions, enable "Developer Mode" from top right, click on "Load Unpacked" to select the unzipped folder in which the code & other files are present, select and upload. Boom!! You have successfully installed this awesome chrome extension.</span>
+            </button>
+            <ol id="ul-el">
+            </ol>
+        </div>
+        <script nonce="EDNnf03nceIOfn39fn3e9h3sdfa" src="index.js"></script>
+    </body>
+</html>
